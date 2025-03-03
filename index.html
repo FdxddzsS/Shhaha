@@ -2,7 +2,7 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>جدول مباريات اليوم</title>
+  <title>جدول مباريات غداً</title>
   <style>
     * {
       margin: 0;
@@ -24,7 +24,7 @@
     }
     .matches-container {
       width: 90%;
-      max-width: 500px;
+      max-width: 600px;
       margin: 0 auto;
     }
     .match-card {
@@ -36,115 +36,95 @@
       align-items: center;
       justify-content: space-between;
       transition: background-color 0.3s;
+      cursor: pointer;
     }
     .match-card:hover {
       background-color: #2A2A2A;
-      cursor: pointer;
     }
     .match-info {
-      display: flex;
-      flex-direction: column;
-      text-align: right;
+      text-align: center;
       flex: 1;
-      margin: 0 10px;
     }
     .teams {
-      font-size: 16px;
+      font-size: 18px;
       font-weight: bold;
       margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .team-logo {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      margin: 0 10px;
     }
     .time, .commentator, .countdown {
       font-size: 14px;
       color: #cccccc;
     }
-    .team-logo {
-      width: 40px;
-      height: 40px;
-      object-fit: contain;
-    }
-    .watch-link {
-      color: #FFD700;
-      text-decoration: none;
-      margin-top: 5px;
-    }
   </style>
 </head>
 <body>
 
-<h1>جدول مباريات اليوم</h1>
+<h1>جدول مباريات غداً 4 مارس</h1>
 
 <div class="matches-container">
   
-  <div class="match-card">
-    <img class="team-logo" src="https://imagecache.365scores.com/image/upload/v2/Competitors/9242" alt="ليغانيس">
-    <div class="match-info">
-      <div class="teams">ليغانيس × خيتافي</div>
-      <div class="time">التوقيت: 4:00</div>
-      <div class="commentator">المعلق: عصام الشوالي</div>
-      <div class="countdown" id="match1"></div>
-      <a href="https://fdxddzss.github.io/Fast-and-hard-/" target="_blank" class="watch-link">مشاهدة المباراة</a>
+  <!-- Match 1: Club Brugge vs Aston Villa -->
+  <div class="match-card" onclick="window.location.href='https://fdxddzss.github.io/FAST-TV-LIFE-11/'">
+    <div class="teams">
+      <img class="team-logo" src="https://imagecache.365scores.com/image/upload/f_png,w_24,h_24,c_limit,q_auto:eco,dpr_3,d_Competitors:default1.png/v3/Competitors/1169" alt="شعار كلوب بروج">
+      <span>كلوب بروج × أستون فيلا</span>
+      <img class="team-logo" src="https://imagecache.365scores.com/image/upload/f_png,w_24,h_24,c_limit,q_auto:eco,dpr_3,d_Competitors:default1.png/v4/Competitors/109" alt="شعار أستون فيلا">
     </div>
-    <img class="team-logo" src="https://imagecache.365scores.com/image/upload/v1/Competitors/140" alt="خيتافي">
+    <div class="match-info">
+      <div class="time">التوقيت: 18:00</div>
+      <div class="commentator">المعلق: علي محمد علي</div>
+      <div class="countdown" id="match1"></div>
+    </div>
   </div>
 
-  <div class="match-card">
-    <img class="team-logo" src="https://g.top4top.io/p_3348rxbtl0.png" alt="برشلونة">
+  <!-- Match 2: Dortmund vs Lille -->
+  <div class="match-card" onclick="window.location.href='https://fdxddzss.github.io/FAST-TV-LIFE/'">
+    <div class="teams">
+      <img class="team-logo" src="https://imagecache.365scores.com/image/upload/f_png,w_24,h_24,c_limit,q_auto:eco,dpr_3,d_Competitors:default1.png/v2/Competitors/341" alt="شعار دورتموند">
+      <span>دورتموند × نادي ليل</span>
+      <img class="team-logo" src="https://imagecache.365scores.com/image/upload/f_png,w_24,h_24,c_limit,q_auto:eco,dpr_3,d_Competitors:default1.png/v2/Competitors/478" alt="شعار نادي ليل">
+    </div>
     <div class="match-info">
-      <div class="teams">برشلونة × ريال سوسيداد</div>
-      <div class="time">التوقيت: 6:15</div>
+      <div class="time">التوقيت: 20:00</div>
       <div class="commentator">المعلق: حفيظ دراجي</div>
       <div class="countdown" id="match2"></div>
-      <a href="https://fdxddzss.github.io/ABDULLAH/" target="_blank" class="watch-link">مشاهدة المباراة</a>
     </div>
-    <img class="team-logo" src="https://imagecache.365scores.com/image/upload/v3/Competitors/154" alt="ريال سوسيداد">
   </div>
 
-  <div class="match-card">
-    <img class="team-logo" src="https://imagecache.365scores.com/image/upload/v1/Competitors/142" alt="ريال مايوركا">
+  <!-- Match 3: Real Madrid vs Atletico Madrid -->
+  <div class="match-card" onclick="window.location.href='https://fdxddzss.github.io/FAST-TV-LIFE-11/'">
+    <div class="teams">
+      <img class="team-logo" src="https://imagecache.365scores.com/image/upload/f_png,w_24,h_24,c_limit,q_auto:eco,dpr_3,d_Competitors:default1.png/v4/Competitors/131" alt="شعار ريال مدريد">
+      <span>ريال مدريد × أتلتيكو مدريد</span>
+      <img class="team-logo" src="https://imagecache.365scores.com/image/upload/f_png,w_24,h_24,c_limit,q_auto:eco,dpr_3,d_Competitors:default1.png/v6/Competitors/134" alt="شعار أتلتيكو مدريد">
+    </div>
     <div class="match-info">
-      <div class="teams">ريال مايوركا × ألافيس</div>
-      <div class="time">التوقيت: 8:30</div>
-      <div class="commentator">المعلق: رؤوف خليف</div>
+      <div class="time">التوقيت: 22:00</div>
+      <div class="commentator">المعلق: عصام الشوالي</div>
       <div class="countdown" id="match3"></div>
-      <a href="https://fdxddzss.github.io/Fast-and-hard-/" target="_blank" class="watch-link">مشاهدة المباراة</a>
     </div>
-    <img class="team-logo" src="https://imagecache.365scores.com/image/upload/v3/Competitors/168" alt="ألافيس">
   </div>
 
-  <div class="match-card">
-    <img class="team-logo" src="https://imagecache.365scores.com/image/upload/v6/Competitors/143" alt="أوساسونا">
+  <!-- Match 4: Eindhoven vs Arsenal -->
+  <div class="match-card" onclick="window.location.href='https://fdxddzss.github.io/bein-sport-2-/'">
+    <div class="teams">
+      <img class="team-logo" src="https://imagecache.365scores.com/image/upload/f_png,w_24,h_24,c_limit,q_auto:eco,dpr_3,d_Competitors:default1.png/v3/Competitors/725" alt="شعار ايندهوفن">
+      <span>ايندهوفن × أرسنال</span>
+      <img class="team-logo" src="https://imagecache.365scores.com/image/upload/f_png,w_24,h_24,c_limit,q_auto:eco,dpr_3,d_Competitors:default1.png/v6/Competitors/104" alt="شعار أرسنال">
+    </div>
     <div class="match-info">
-      <div class="teams">أوساسونا × فالنسيا</div>
-      <div class="time">التوقيت: 11:00</div>
-      <div class="commentator">المعلق: أحمد الطيب</div>
+      <div class="time">التوقيت: 23:00</div>
+      <div class="commentator">المعلق: علي سعيد الكعبي</div>
       <div class="countdown" id="match4"></div>
-      <a href="https://fdxddzss.github.io/Fast-and-hard-/" target="_blank" class="watch-link">مشاهدة المباراة</a>
     </div>
-    <img class="team-logo" src="https://imagecache.365scores.com/image/upload/v2/Competitors/139" alt="فالنسيا">
-  </div>
-
-  <div class="match-card">
-    <img class="team-logo" src="https://imagecache.365scores.com/image/upload/v1/Competitors/116" alt="نيوكاسل">
-    <div class="match-info">
-      <div class="teams">نيوكاسل × برايتون</div>
-      <div class="time">التوقيت: 4:45</div>
-      <div class="commentator">المعلق: حسن العيدروس</div>
-      <div class="countdown" id="match5"></div>
-      <a href="https://fdxddzss.github.io/Fast-and-hard-/" target="_blank" class="watch-link">مشاهدة المباراة</a>
-    </div>
-    <img class="team-logo" src="https://imagecache.365scores.com/image/upload/v2/Competitors/38" alt="برايتون">
-  </div>
-
-  <div class="match-card">
-    <img class="team-logo" src="https://imagecache.365scores.com/image/upload/v1/Competitors/105" alt="مانشستر يونايتد">
-    <div class="match-info">
-      <div class="teams">مانشستر يونايتد × فولهام</div>
-      <div class="time">التوقيت: 7:30</div>
-      <div class="commentator">المعلق: خليل البلوشي</div>
-      <div class="countdown" id="match6"></div>
-      <a href="https://fdxddzss.github.io/bein-sport-2-/" target="_blank" class="watch-link">مشاهدة المباراة</a>
-    </div>
-    <img class="team-logo" src="https://imagecache.365scores.com/image/upload/v1/Competitors/120" alt="فولهام">
   </div>
 
 </div>
@@ -152,6 +132,7 @@
 <script>
   function startCountdown(id, time) {
     let matchTime = new Date();
+    matchTime.setDate(matchTime.getDate() + 1); // إضافة يوم للمباراة
     let [hour, minute] = time.split(":").map(Number);
     
     matchTime.setHours(hour, minute, 0, 0);
@@ -177,13 +158,10 @@
     updateCountdown();
   }
 
-  startCountdown("match1", "16:00");
-  startCountdown("match2", "18:15");
-  startCountdown("match3", "20:30");
+  startCountdown("match1", "18:00");
+  startCountdown("match2", "20:00");
+  startCountdown("match3", "22:00");
   startCountdown("match4", "23:00");
-  startCountdown("match5", "16:45");
-  startCountdown("match6", "19:30");
-
 </script>
 
 </body>
