@@ -2,7 +2,7 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>جدول مباريات غداً</title>
+  <title>جدول مباريات اليوم</title>
   <style>
     * {
       margin: 0;
@@ -67,7 +67,7 @@
 </head>
 <body>
 
-<h1>جدول مباريات غداً 4 مارس</h1>
+<h1>جدول مباريات اليوم 3 مارس</h1>
 
 <div class="matches-container">
   
@@ -79,7 +79,7 @@
       <img class="team-logo" src="https://imagecache.365scores.com/image/upload/f_png,w_24,h_24,c_limit,q_auto:eco,dpr_3,d_Competitors:default1.png/v4/Competitors/109" alt="شعار أستون فيلا">
     </div>
     <div class="match-info">
-      <div class="time">التوقيت: 18:00</div>
+      <div class="time">التوقيت: 8:45</div>
       <div class="commentator">المعلق: علي محمد علي</div>
       <div class="countdown" id="match1"></div>
     </div>
@@ -93,7 +93,7 @@
       <img class="team-logo" src="https://imagecache.365scores.com/image/upload/f_png,w_24,h_24,c_limit,q_auto:eco,dpr_3,d_Competitors:default1.png/v2/Competitors/478" alt="شعار نادي ليل">
     </div>
     <div class="match-info">
-      <div class="time">التوقيت: 20:00</div>
+      <div class="time">التوقيت: 11:00</div>
       <div class="commentator">المعلق: حفيظ دراجي</div>
       <div class="countdown" id="match2"></div>
     </div>
@@ -107,7 +107,7 @@
       <img class="team-logo" src="https://imagecache.365scores.com/image/upload/f_png,w_24,h_24,c_limit,q_auto:eco,dpr_3,d_Competitors:default1.png/v6/Competitors/134" alt="شعار أتلتيكو مدريد">
     </div>
     <div class="match-info">
-      <div class="time">التوقيت: 22:00</div>
+      <div class="time">التوقيت: 11:00</div>
       <div class="commentator">المعلق: عصام الشوالي</div>
       <div class="countdown" id="match3"></div>
     </div>
@@ -121,7 +121,7 @@
       <img class="team-logo" src="https://imagecache.365scores.com/image/upload/f_png,w_24,h_24,c_limit,q_auto:eco,dpr_3,d_Competitors:default1.png/v6/Competitors/104" alt="شعار أرسنال">
     </div>
     <div class="match-info">
-      <div class="time">التوقيت: 23:00</div>
+      <div class="time">التوقيت: 11:00</div>
       <div class="commentator">المعلق: علي سعيد الكعبي</div>
       <div class="countdown" id="match4"></div>
     </div>
@@ -132,10 +132,9 @@
 <script>
   function startCountdown(id, time) {
     let matchTime = new Date();
-    matchTime.setDate(matchTime.getDate() + 1); // إضافة يوم للمباراة
     let [hour, minute] = time.split(":").map(Number);
     
-    matchTime.setHours(hour, minute, 0, 0);
+    matchTime.setHours(hour, minute, 0, 0); // حساب التوقيت لليوم الحالي
 
     function updateCountdown() {
       let now = new Date();
@@ -158,11 +157,11 @@
     updateCountdown();
   }
 
-  startCountdown("match1", "18:00");
-  startCountdown("match2", "20:00");
-  startCountdown("match3", "22:00");
+  startCountdown("match1", "20:45");
+  startCountdown("match2", "23:00");
+  startCountdown("match3", "23:00");
   startCountdown("match4", "23:00");
 </script>
 
 </body>
-</html>
+  </html>
